@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Your quiz should open in a new tab.</p>
+  <p>If it didn’t, <a id="quizLink" href="#" target="_blank">click here</a> to open it.</p>
+
+  <script>
+    const quizUrl = "https://script.google.com/macros/s/AKfycbyhQA8lykbI6IKjN1CDLu1L7h3W6CYYg3pjM-2Ka-uxU95ZHCa8Q_CojF6jQO8uLHejEw/exec";
+    document.getElementById("quizLink").href = quizUrl;
+    window.open(quizUrl, "_blank");
+  </script>
+</body>
+</html>
